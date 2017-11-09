@@ -13,6 +13,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+h5 {
+    font-size:14px;
+}
 a {
 	font-weight: bold;
 	text-decoration: none;
@@ -102,7 +105,7 @@ a:focus {
 }
 
 .js .loading::after {
-	content: 'Loading... \APlease turn on your sound';
+	content: 'Loading... ( .Hold on! The sounds file might take a while to load.)...\APlease turn on your sound';
 	line-height: 2;
 	padding: 2em 0 0 0;
 	text-align: center;
@@ -139,9 +142,10 @@ a:focus {
 
 .intro__header {
 	position: absolute;
-	top: 2em;
+	top: 0%;
 	right: 2em;
 	left: 2em;
+	font-size: 60px;
 }
 
 /* Top Navigation Style */
@@ -283,7 +287,7 @@ a:focus {
 }
 
 .content__inner--half .content__title {
-	font-size: 2.25em;
+	font-size: 1.25em;
 	margin-bottom: 0.5em;
 	text-transform: uppercase;
 }
@@ -309,7 +313,7 @@ a:focus {
 }
 
 .content__title {
-	font-size: 5em;
+	font-size: 3em;
 	font-weight: 900;
 	line-height: 0.85;
 	position: relative;
@@ -318,6 +322,10 @@ a:focus {
 	padding: 0 5vmax 0 5vmax;
 	text-transform: uppercase;
 	pointer-events: none;
+}
+
+.content--tiny {
+    background: #e6c0c0;
 }
 
 .content__title--color {
@@ -347,7 +355,7 @@ a:focus {
 }
 
 .content__subtitle--light {
-	color: #f7f4ec;
+	color: pink;
 }
 
 .content--kalimba::after {
@@ -380,19 +388,20 @@ a:focus {
 
 .content--bg-violin {
 	background-image: url(../img/violin.jpg);
+	opacity: 0,3;
 }
 
 .content--guitar {
-	background: #dad4c3;
+	background: #ff6347;
 }
 
 .content--guitar .content__title,
 .content--guitar .link-more {
-	color: #d06315;
+	color: #ffb6c1;
 }
 
 .content--chime {
-	background: #c3cfda;
+	background: #ffcc99;
 }
 
 .content--chime .content__title,
@@ -406,11 +415,11 @@ a:focus {
 }
 
 .content--harp {
-	background: #fdecc3;
+	background: #c1ffc1;
 }
 
 .content--timpani {
-	background: #4d61c5;
+	background: #e6b3ff;
 }
 
 .content--timpani .link-more {
@@ -418,7 +427,7 @@ a:focus {
 }
 
 .content--xylophone {
-	background: #d6da97;
+	background: #b7dbff;
 }
 
 .content--xylophone .content__title {
@@ -429,12 +438,12 @@ a:focus {
 	color: #d06315;
 }
 
-.content--tiny {
-	background: #fbe8ab;
+.content--tiny .content__title {
+	color: #e4ab9b;
 }
 
-.content--tiny .content__title {
-	color: #d06315;
+.content--tiny .link-more {
+	margin-bottom: 4em;
 }
 
 .content--tiny .link-more {
@@ -483,6 +492,15 @@ a:focus {
 	color: #4d61c5;
 }
 
+.many-thanks {
+	text-align: center;
+	font-weight: bold;
+	max-width: 100%;
+	max-height: 100%;
+	padding: 1.5em;
+	margin-bottom: 1.1em;
+}
+
 .media-item {
 	display: inline-block;
 	padding: 1em;
@@ -510,11 +528,12 @@ a:focus {
 }
 
 #wavebg canvas {
+    background-image: url('../img/color.png');
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 30%;
 }
 
 @media screen and (max-width: 50em) {
