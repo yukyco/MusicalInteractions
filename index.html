@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Musical Interactions | Codrops</title>
+		<title>Musical website makes you happy. :)</title>
 		<meta name="description" content="Some experimental ideas for playful musical interactions" />
 		<meta name="piano__keywords" content="music, web audio api, instruments, midi, interaction, web, website, sound" />
 		<meta name="author" content="Codrops" />
@@ -31,33 +31,40 @@
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<script>document.documentElement.className = 'js';</script>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84554395-2"></script>
+                <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-84554395-2');
+        </script>
+		<!--<style>
+			body #cdawrap {
+				background: #f9ce49;
+				top: 100%;
+				top: 100vh;
+				margin-top: 15px;
+				position: absolute;
+				border-color: #dcba51;
+				right: 15px;
+			}
+		</style>-->
 	</head>
 	<body class="loading">
-		<svg class="hidden">
-			<symbol id="icon-arrow" viewBox="0 0 24 24">
-				<title>arrow</title>
-				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
-			</symbol>
-			<symbol id="icon-drop" viewBox="0 0 24 24">
-				<title>drop</title>
-				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
-			</symbol>
-			<symbol id="icon-github" viewBox="0 0 32.58 31.77">
-				<title>github</title>
-				<path d="M16.29,0a16.29,16.29,0,0,0-5.15,31.75c.81.15,1.11-.35,1.11-.79s0-1.41,0-2.77C7.7,29.18,6.74,26,6.74,26a4.31,4.31,0,0,0-1.81-2.38c-1.48-1,.11-1,.11-1a3.42,3.42,0,0,1,2.5,1.68,3.47,3.47,0,0,0,4.74,1.35,3.48,3.48,0,0,1,1-2.18C9.7,23.08,5.9,21.68,5.9,15.44a6.3,6.3,0,0,1,1.68-4.37,5.86,5.86,0,0,1,.16-4.31s1.37-.44,4.48,1.67a15.44,15.44,0,0,1,8.16,0c3.11-2.11,4.48-1.67,4.48-1.67A5.85,5.85,0,0,1,25,11.07a6.29,6.29,0,0,1,1.67,4.37c0,6.26-3.81,7.63-7.44,8a3.89,3.89,0,0,1,1.11,3c0,2.18,0,3.93,0,4.47s.29.94,1.12.78A16.29,16.29,0,0,0,16.29,0Z"></path>
-			</symbol>
-		</svg>
 		<main>
 			<section class="intro flexy flexy--center">
-				<header class="intro__header flexy flexy--row">
+				<!--<header class="intro__header flexy flexy--row">
 					<div class="codrops-links">
 						<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/TiltHoverEffects/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
 						<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=28980" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
 					</div>
 					<a href="https://github.com/codrops/MusicalInteractions/" class="link-github" title="View this Project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a>
-				</header>
-				<h1 class="intro__title">Tempo</h1>
-				<p class="intro__tagline">Some experimental ideas for playful musical interactions</p>
+				</header>-->
+				<!--text-->
+				<br />
+				<!--<p class="intro__tagline">Some funny experiment makes you happy, isn't it?</p>-->
 				<div class="interaction"></div>
 			</section>
 			<section class="content content--instrument content--piano content--cursor-dark">
@@ -159,33 +166,12 @@
 				</div><!-- piano -->
 			</section>
 			<section id="wavebg" class="content content--highlight flexy flexy--center">
-				<p class="content__highlight">And those who were seen dancing were thought to be insane by those who could not hear the music.<br><span class="tiny">&mdash;Friedrich Nietzsche</span></p>
-			</section>
-			<section class="content flexy content--bg content--bg-mic content--cursor-light">
-				<div class="content__inner content__inner--fheight flexy flexy--center">
-					<h2 class="content__title content__title--center content__title--light">Voice</h2>
-					<p class="content__subtitle content__subtitle--light">From microphones to power amps and PA equipment, we've collected the best performing solutions for you.</p>
-					<a href="#" class="link-more">Explore</a>
-				</div>
-				<div class="interaction interaction--corner interaction--light"></div>
-			</section>
-			<section class="content content--nopadding content--boxes flexy flexy--row flexy--stretch">
-				<div class="content__inner content__inner--half content__inner--c1 flexy flexy--center">
-					<h2 class="content__title">Since 1979</h2>
-					<p class="content__subtitle content__subtitle--light">Learn how Tempo has become the leading music production and review hub in the history of mankind.</p>
-					<a href="#" class="link-more link-more--light">Read our story</a>
-				</div>
-				<div class="content__inner content__inner--half content__inner--c2 flexy flexy--center">
-					<h2 class="content__title">The Hub</h2>
-					<p class="content__subtitle">Explore how Tempo has helped thousands of artist find their perfect equipment &amp; get connected.</p>
-					<a href="#" class="link-more">Join the hub</a>
-				</div>
+				<p class="content__highlight">Always much love and enthusiasm. <br />
+    				It makes precious life.<br><span class="tiny"> - Yukyco</span></p>
 			</section>
 			<section class="content content--instrument content--guitar content--cursor-dark">
 				<div class="content__inner content__inner--medium flexy flexy--center">
-					<h2 class="content__title">Guitars</h2>
-					<p class="content__subtitle content__subtitle--light">Fretted fingerboards and plectrums, six or twelve strings, we know what guitar lovers are truly into.</p>
-					<a href="#" class="link-more">Explore</a>
+					<!--text-->
 				</div>
 				<div class="guitar instrument">
 					<svg class="guitar__inner" preserveAspectRatio="xMinYMax meet" xmlns:note="http://tympanus.net/codrops" viewBox="0 0 1440 780">
@@ -233,9 +219,7 @@
 			</section>
 			<section class="content content--instrument content--instrument-alt content--kalimba content--cursor-dark flexy">
 				<div class="content__inner content__inner--medium flexy flexy--center">
-					<h2 class="content__title">Kalimbas</h2>
-					<p class="content__subtitle">Ethnic music instruments are more than just sound makers. They bear magnificent stories and we want to tell them all.</p>
-					<a href="#" class="link-more">Explore</a>
+					<!--text-->
 				</div>
 				<div class="kalimba instrument">
 					<svg class="kalimba__inner" xmlns:note="http://tympanus.net/codrops" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMin meet">
@@ -253,9 +237,7 @@
 			</section>
 			<section class="content content--instrument content--chime content--cursor-dark flexy">
 				<div class="content__inner content__inner--medium flexy flexy--center">
-					<h2 class="content__title">Chimes</h2>
-					<p class="content__subtitle">Tubular bells have their own little life. What are their secrets? Spectacular sounds!</p>
-					<a href="#" class="link-more">Explore</a>
+					<!--text-->
 				</div>
 				<div class="chime chime--large instrument">
 					<svg class="chime__inner" xmlns:note="http://tympanus.net/codrops" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMin meet">
@@ -313,9 +295,7 @@
 			</section>
 			<section class="content content--instrument content--harp content--instrument-alt content--cursor-dark">
 				<div class="content__inner content__inner--medium flexy flexy--center">
-					<h2 class="content__title">Harps</h2>
-					<p class="content__subtitle">Bare fingers are the Harp's true friends, plucking to create sounds of divinity. We got them all.</p>
-					<a href="#" class="link-more">Explore</a>
+					<!--text-->
 				</div>
 				<div class="harp instrument">
 					<svg class="harp__inner" xmlns:note="http://tympanus.net/codrops" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid meet">
@@ -517,9 +497,7 @@
 			</section>
 			<section class="content content--instrument content--timpani content--cursor-dark">
 				<div class="content__inner content__inner--medium flexy flexy--center">
-					<h2 class="content__title">Timpani</h2>
-					<p class="content__subtitle content__subtitle--light">What would any classical orchestra or the space odyssey be without the thunder sound that makes our hearts soar?</p>
-					<a href="#" class="link-more">Explore</a>
+					<!--text-->
 				</div>
 				<div class="timpani instrument">
 					<svg class="timpani__inner" xmlns:note="http://tympanus.net/codrops" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMax meet">
@@ -533,9 +511,9 @@
 			</section>
 			<section class="content content--instrument content--xylophone content--instrument-alt content--cursor-dark">
 				<div class="content__inner content__inner--medium flexy flexy--center">
-					<h2 class="content__title">Xylophones</h2>
-					<p class="content__subtitle">Marimba, balafons and even semantrons make all part of our collection. Idiophone lovers, we've got you covered.</p>
-					<a href="#" class="link-more">Explore</a>
+					<!--<h5 class="content__title">Awesome reading!!</h5>
+					<p class="content__subtitle">Xylophones</p>
+					<a href="#">Play & Explore :)</a>-->
 				</div>
 				<div class="xylophone instrument">
 					<svg class="xylophone__inner" xmlns:note="http://tympanus.net/codrops" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMax meet">
@@ -601,28 +579,19 @@
 			</section>	
 			<section class="content content--nopadding content--boxes flexy flexy--row flexy--stretch">
 				<div class="content__inner content__inner--half content__inner--c3 flexy flexy--center">
-					<h2 class="content__title">Since 1979</h2>
-					<p class="content__subtitle content__subtitle--light">Learn how Tempo has become the leading music production and review hub in the history of mankind.</p>
-					<a href="#" class="link-more link-more--light">Read our story</a>
+					<h2 class="content__title">Site Design & Me</h2>
+					<p class="content__subtitle">Please find or confirm my skill at my portfolio. &amp; get connected.</p>
+					<a href="../oswt" class="link-more">Join us</a>
 				</div>
 				<div class="content__inner content__inner--half content__inner--c2 flexy flexy--center">
-					<h2 class="content__title">The Hub</h2>
-					<p class="content__subtitle">Explore how Tempo has helped thousands of artist find their perfect equipment &amp; get connected.</p>
-					<a href="#" class="link-more">Join the hub</a>
+					<h2 class="content__title">Play Job</h2>
+					<p class="content__subtitle content__subtitle--light">Building websites is my mission. It makes me happy. It makes my life. </p>
+					<a href="../free-bootstrap" class="link-more link-more--light">Read my mission</a><!--class="link-more link-more--light"-->
 				</div>
-			</section>
-			<section class="content flexy content--bg content--bg-violin content--cursor-light">
-				<div class="content__inner content__inner--fheight flexy flexy--center">
-					<h2 class="content__title content__title--light">Strings</h2>
-					<p class="content__subtitle content__subtitle--light">Mahogany and maple, Guarneri del Gesu and Stradivari: Welcome to the world of high-quality strings.</p>
-					<a href="#" class="link-more">Explore</a>
-				</div>
-				<div class="interaction interaction--corner interaction--light"></div>
 			</section>
 			<section class="content content--instrument content--tiny flexy flexy--center">
 				<div class="content__inner flexy flexy--center">
-					<h2 class="content__title">And More</h2>
-					<p class="content__subtitle">From tubas to saxophones and other excellent musical friends, we have them all.</p>
+					<!--text-->
 				</div>
 				<div class="flexy flexy--row flexy--center flexy--stretch flexy--padding">
 					<div class="tiny-instrument tiny-instrument--flute"><img class="tiny-instrument__image" src="img/instruments/panflute.svg" alt="Pan Flute"/></div>
@@ -657,19 +626,9 @@
 						<path class="chime__holder" d="M82.9,9.5H17.1V5h65.7V9.5z"/>
 					</svg>
 				</div>
-				<h3>If you enjoyed this demo you might also like:</h3>
-				<a class="media-item" href="http://tympanus.net/Development/AboveBeneath/">
-					<img class="media-item__img" src="img/related/AboveBeneath.jpg">
-					<h3 class="media-item__title">Above &amp; Beneath</h3>
-				</a>
-				<a class="media-item" href="http://tympanus.net/Development/RecordPlayer/">
-					<img class="media-item__img" src="img/related/RecordPlayer.jpg">
-					<h3 class="media-item__title">Interactive Record Player</h3>
-				</a>
-				<a class="media-item" href="http://tympanus.net/Tutorials/SVGDrums/">
-					<img class="media-item__img" src="img/related/Drums.jpg">
-					<h3 class="media-item__title">SVG Drums</h3>
-				</a>
+				<h4 class="many-thanks">Many thanks to Codrops</h4>
+				<a class="media-item" href="https://tympanus.net/codrops/">
+				<a href="https://tympanus.net/codrops/"><img class="media-item__img" src="img/favicon.png"></a>
 			</section>
 		</main>
 		<!-- keyboard events : used for the piano - assign keyboard keys to piano keys -->
@@ -704,5 +663,9 @@
 		<script src="js/violin.js"></script>
 		<!-- main script -->
 		<script src="js/main.js"></script>
+
+		<!-- For the demo ad only -->   
+		<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+	
 	</body>
 </html>
